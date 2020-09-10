@@ -1,0 +1,147 @@
+# include <stdio.h>
+int main(){
+	printf("Hello World");
+	return 0;
+}
+
+# include <stdio.h>
+int main (){
+	int number;
+	printf("Please input a number:");
+	scanf("%d",&number);
+	printf("The number you input was:%d",number);
+	return 0;
+}
+
+#include <stdio.h>
+int main(){
+	char character;
+	printf("Please input a character:");
+	scanf("%c",&character);
+	printf("The character you input was:%c",character);
+	return 0;
+}
+
+# include <stdio.h>
+int main(){
+	float floatNumber;
+	printf("Please input a floating number:");
+	scanf("%f",&floatNumber);
+	printf("The floating number you input was:%f",floatNumber);
+	return 0;
+}
+
+ # include <stdio.h>
+int main(){
+	double doubleFloatNumber;
+	printf("Please input a double floating number:");
+	scanf("%le",&doubleFloatNumber);//注意：浮点类型一定要对应上 
+	printf("The double floating number is: %le", doubleFloatNumber);
+	return 0;
+}
+
+# include <stdio.h>
+int main(){
+	int firstNumber,secondNumber,thirdNumber;
+	printf("Please input the first number:");
+	scanf("%d",&firstNumber);
+	printf("Please input the second number:");
+	scanf("%d",&secondNumber);
+	printf("First Number is %d and second number is %d",firstNumber,secondNumber);
+	thirdNumber = firstNumber+secondNumber;
+	printf("The result of firstNumber+seconNumber is %d",thirdNumber);
+	return 0;
+} 
+
+# include <stdio.h>
+int main(){
+	float firstNumber,secondNumber,thirdNumber;
+	printf("Please input the first number:");
+	scanf("%f",&firstNumber);
+	printf("Please input the second number:");
+	scanf("%f",&secondNumber);
+	printf("First Number is %f and second number is %f",firstNumber,secondNumber);
+	thirdNumber = firstNumber*secondNumber;
+	printf("The result of firstNumber*seconNumber is %f",thirdNumber);
+	return 0;
+} 
+
+#include <stdio.h>
+int main(){
+	char character;
+	printf("Please input a character: %c",character);
+	scanf("%c",&character);
+	printf("%c has ASCII code: %d",character,character);
+	return 0;
+} 
+
+#include <stdio.h>
+int main(){
+	int j,k,m,n;
+	printf("Please input the first number:");
+	scanf("%d",&j);
+	printf("Please input the second number:");
+	scanf("%d",&k);
+	while (j>=k){
+		j = j-k;
+		m++;
+		if (j<k){
+			break;
+		}	
+	}
+	printf("商为 %d，余数为 %d",m,j);
+//	if (j!=0){
+//		printf("商为 %d，余数为 %d",m,j);
+//	}
+//	if (j!=0){
+//			printf("商为 %d，余数为 %d",m,j);
+//		}
+}
+
+int main(){
+ 
+   int dividend, divisor, quotient, remainder;
+    printf("输入被除数: ");
+    scanf("%d", &dividend);
+ 
+    printf("输入除数: ");
+    scanf("%d", &divisor);
+ 
+ //计算商
+    quotient = dividend / divisor;
+ 
+ //计算余数
+    remainder = dividend % divisor;
+ 
+    printf("商 = %d\n", quotient);
+    printf("余数 = %d", remainder);
+ 
+    return 0;
+}
+
+# include <stdio.h>
+int main(){
+	float a=6.000,b=4.000,c;
+//	float d;
+	c = a/b;
+//	d = a%b;
+	printf("%f\n",c);
+//	printf("%f\n",d);
+	return 0;	
+}
+
+#include <stdio.h>
+int main(){
+	int a, b;
+	printf("Please input two numbers:  ",a,b);
+	scanf("%d %d",&a,&b);
+	if (a>=b){
+		printf("%d is larger than %d",a,b);
+	}
+	else if (a<b){
+		printf("%d is smaller than %d",a,b);
+	}
+	return 0;
+}
+
+
